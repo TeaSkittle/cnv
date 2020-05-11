@@ -1,4 +1,4 @@
-# Converter
+# cnv
 
 ## About
 This tool is designed to convert whole number values between the three main
