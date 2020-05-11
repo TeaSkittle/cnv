@@ -12,7 +12,7 @@ $ 257
 ```
 
 ## Commandline Arguments
-* -h -> list flags 
+* -help -> list help
 * -dh -> deciaml to hexadecimal
 * -db -> decimal to binary
 * -bd -> binary to decimal
@@ -22,4 +22,3 @@ $ 257
 
 No arguments will run interactive mode, which takes hexadecimal and binary
 input and converts to decimal.
-
