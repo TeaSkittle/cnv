@@ -4,7 +4,6 @@
 # Convert decimal, hex, and binary numbers
 
 import sys
-import string
 
 # Show command line arguments
 def listHelp():
