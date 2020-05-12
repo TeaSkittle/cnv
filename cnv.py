@@ -29,35 +29,20 @@ hexToDec = ( lambda x: str( int( x, 16 )))
 hexToBin = ( lambda x: str( bin( int( x, 16 ))))
 
 # Comparison functions
-def isDec( x ):
-	try:
-		isinstance( int( x ), int )
-		return True
-	except:
-		return False
-
-def isHex( x ): 
-	try:
-		int( x, 16 )
-		return True	
-	except:
-		return False
-
-def isBin( x ):
-	try:
-		int( x, 2 )
-		return True
-	except:
-		return False
+# NOTE: Not being used
+isDec = (lambda x: True if ( int( x, 10 )) else False )
+isHex = (lambda x: True if ( int( x, 16 )) else False )
+isBin = (lambda x: True if ( int( x, 2  )) else False )
 	
 # Calc
 def calc( x ):
-	if isDec( x ) == True:
-		print( x )	
-	elif isBin( x ) == True:
+	try:	
 		print( binToDec( x ))
-	elif isHex( x ) == True:
-		print( hexToDec( x ))
+	except ValueError:
+		try: 
+			print( hexToDec( x ))
+		except ValueError:
+			print( "ERROR: Unkown value" )
 
 # Convert switch
 def convert():
